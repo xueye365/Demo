@@ -1,0 +1,16 @@
+addout
+*.iml
+.idea
+**/misc.xml
+log.*
+**/logs
+.DS_Store
+**/node_modules
+**/docs
+**/bower_components
+logs/
+**/.tmp
+.metadata/
+*.prefs
+*.project
+*.classpath
