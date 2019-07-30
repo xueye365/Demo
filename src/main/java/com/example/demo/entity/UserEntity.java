@@ -2,8 +2,8 @@ package com.example.demo.entity;
 
 public class UserEntity {
 
-    private Integer id;
-    private String name;
+    public Integer id;
+    public String name;
 
     public Integer getId() {
         return id;

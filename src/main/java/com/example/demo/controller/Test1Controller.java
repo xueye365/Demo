@@ -14,8 +14,25 @@ public class Test1Controller {
         @Autowired
         private Test1Service test1Service;
 
+        /**
+         * 测试Spring
+         * @param name
+         */
         @RequestMapping(value = "insert", method = RequestMethod.GET)
         public void testRepaymentAdvise(@RequestParam("name") String name){
                 test1Service.insert(name);
         }
+
+        /**
+         * 测试aop
+         */
+        @RequestMapping(value = "testAop", method = RequestMethod.GET)
+        public void testAop(@RequestParam("name") String name, @RequestParam("userId") Integer userId){
+                test1Service.testAop(name, userId);
+        }
+
+
+
+
+
 }
